@@ -1,0 +1,46 @@
+.MainContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-image: url();
+}
+
+.Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D1D4D3;
+    width: 100%;
+}
+
+.Logo {
+    display: flex;
+    margin: 20px 0;
+}
+
+.Logo img {
+    width: 90px;
+    height: 90px;
+}
+
+.Buttons {
+    display: flex;
+    margin-left: 580px;
+    gap: 30px 30px;
+}
+
+
+.Nav {
+    text-decoration: none;
+    color: #673024;
+    font-size: 20px;
+}
+
+.Nav:hover {
+    text-decoration-line: underline;
+    text-decoration-color: white;
+    color: white;
+    transition: ease-in 0.1s;
+    --btn-hover-bg: rgb(73, 124, 185);
+
+}
