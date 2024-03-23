@@ -1,0 +1,35 @@
+.Container {
+    position: relative;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContainerTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Welcome {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.Title {
+    margin: 0;
+    font-size: 6em;
+    display: flex;
+}
+
+.SubTitle {
+    margin: 0;
+    font-size: 3em;
+    display: flex;
+}

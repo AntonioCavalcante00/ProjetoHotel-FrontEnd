@@ -16,7 +16,7 @@ export default function Header() {
                     </NavLink>
                     <NavLink to='/passeios' className={s.Nav}>
                         Passeios</NavLink>
-                    <NavLink to='/preços' className={s.Nav}>
+                    <NavLink reloadDocument to='/preços' className={s.Nav}>
                         Preços</NavLink>
                     <NavLink to='/resort' className={s.Nav}>
                         Resort</NavLink>
