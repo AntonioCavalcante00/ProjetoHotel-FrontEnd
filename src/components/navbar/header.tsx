@@ -2,6 +2,8 @@ import { NavLink } from 'react-router-dom'
 
 import s from './header.module.css'
 import logo from '../../public/logo.png'
+import { IoMdMenu } from "react-icons/io";
+
 
 export default function Header() {
 
@@ -10,6 +12,11 @@ export default function Header() {
             <header>
                 <div className={s.MainContainer}>
                     <div className={s.Container}>
+                        <div className={s.ToggleMenu}>
+                            <button className={s.ButtonMenu}>
+                                <IoMdMenu className={s.IconMenu} />
+                            </button>
+                        </div>
                         <div className={s.Logo}>
                             <NavLink to='/'><img src={logo}></img></NavLink>
                         </div>
@@ -25,6 +32,7 @@ export default function Header() {
                                 Resort</NavLink>
                             <NavLink to='/informações' className={s.Nav}>
                                 Informações</NavLink>
+
                         </div>
                     </div>
                 </div >

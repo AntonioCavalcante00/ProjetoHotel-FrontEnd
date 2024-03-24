@@ -32,6 +32,18 @@
     gap: 24px;
 }
 
+
+.ButtonMenu {
+    border: 0;
+    background: none;
+    display: none;
+}
+
+.IconMenu {
+    width: 30px;
+    height: 30px;
+}
+
 .Nav {
     text-decoration: none;
     color: #673024;
@@ -44,5 +56,49 @@
     text-decoration-color: #b3513bd0;
     color: #b3513bd0;
     transition: ease-in 0.3s;
+
+}
+
+@media (max-width: 992px) {
+    .Buttons .Nav {
+        display: none;
+    }
+
+    .ButtonMenu {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ToggleMenu {
+        display: flex;
+    }
+
+    .Logo {
+        display: flex;
+    }
+
+    .IconMenu {
+        width: 40px;
+        height: 40px;
+    }
+
+    .Buttons {
+        margin: 0
+    }
+
+    .MainContainer {
+        display: block;
+        padding: 0px;
+        margin: 0;
+    }
+
+    .Container {
+        display: flex;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        gap: 80px;
+    }
 
 }
