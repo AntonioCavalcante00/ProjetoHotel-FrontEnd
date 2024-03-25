@@ -10,6 +10,7 @@ import banner3 from '../../public/banner3.png'
 
 
 
+
 const Slide = () => {
     const settings = {
         dots: true,

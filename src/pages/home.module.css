@@ -33,3 +33,42 @@
     font-size: 3em;
     display: flex;
 }
+
+@media (max-width: 992px) {
+
+    .Container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 412px;
+        padding: 0;
+    }
+
+    .ContainerTitle {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .Welcome {
+        font-size: 1.3rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Title {
+        font-size: 2.1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .SubTitle {
+        font-size: 1em;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

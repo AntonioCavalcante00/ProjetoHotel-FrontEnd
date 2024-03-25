@@ -60,32 +60,6 @@
 }
 
 @media (max-width: 992px) {
-    .Buttons .Nav {
-        display: none;
-    }
-
-    .ButtonMenu {
-        display: block;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .ToggleMenu {
-        display: flex;
-    }
-
-    .Logo {
-        display: flex;
-    }
-
-    .IconMenu {
-        width: 40px;
-        height: 40px;
-    }
-
-    .Buttons {
-        margin: 0
-    }
 
     .MainContainer {
         display: block;
@@ -96,9 +70,40 @@
     .Container {
         display: flex;
         position: relative;
+        align-items: center;
+        justify-content: center;
         padding: 0;
-        margin: 0;
-        gap: 80px;
+        width: 29vh;
     }
+
+    .Buttons .Nav {
+        display: none;
+
+    }
+
+    .ToggleMenu {
+        display: block;
+
+    }
+
+    .ButtonMenu {
+        display: block;
+        color: #673024;
+        margin: 0 90px;
+    }
+
+    .IconMenu {
+        width: 40px;
+        height: 40px;
+    }
+
+    .Logo {
+        display: block;
+    }
+
+    .Buttons {
+        margin: 0;
+    }
+
 
 }

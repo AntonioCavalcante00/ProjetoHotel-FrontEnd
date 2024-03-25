@@ -10,11 +10,9 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media (max-width: 992px) {
     .Wallpapers {
-        margin-top: 13em;
         margin-bottom: 60px;
-        z-index: -1;
         overflow: hidden;
     }
 
