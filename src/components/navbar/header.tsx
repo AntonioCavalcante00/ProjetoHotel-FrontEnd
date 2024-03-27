@@ -15,7 +15,7 @@ export default function Header() {
                     <div className={s.Container}>
                         <div className={s.ToggleMenu}>
                             <button className={s.ButtonMenu}>
-                                <Offcanvas className={s.IconMenu} />
+                                <Offcanvas />
                             </button>
                         </div>
                         <div className={s.Logo}>
