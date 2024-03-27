@@ -9,7 +9,7 @@ export default function Offcanvas() {
                 <IoMdMenu />
             </button>
 
-            <div className="offcanvas offcanvas-start offcanvas-lg" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div className="offcanvas offcanvas-start offcanvas-lg" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                 <div className="offcanvas-header">
                     <h5 className="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
