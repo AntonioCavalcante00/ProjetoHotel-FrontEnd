@@ -1,36 +1,63 @@
-import { IoMdMenu } from "react-icons/io";
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Drawer from '@mui/material/Drawer';
+import Button from '@mui/material/Button';
+import List from '@mui/material/List';
+import { Divider } from '@mui/material';
+
 import { NavLink } from 'react-router-dom';
+import { IoMdMenu, IoIosClose } from "react-icons/io";
 import s from './offcanvas.module.css'
 
 
-export default function Offcanvas() {
-    return (
-        <>
-            <button className={s.ButtonCanvas} data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                <IoMdMenu className={s.IconCanvas} />
-            </button>
+export default function Offcanvas2() {
+    const [open, setOpen] = React.useState(false);
 
-            <div className="offcanvas offcanvas-start offcanvas-lg" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                <div className="offcanvas-header">
-                    <h5 className="offcanvas-title" >Offcanvas</h5>
-                    <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div className="offcanvas-body">
-                    <div>
-                        <NavLink to='/hospedagem' >
-                            Hospedagem
-                        </NavLink>
-                        <NavLink to='/passeios'>
-                            Passeios</NavLink>
-                        <NavLink reloadDocument to='/preços' >
-                            Preços</NavLink>
-                        <NavLink to='/resort' >
-                            Resort</NavLink>
-                        <NavLink to='/informações'>
-                            Informações</NavLink>
-                    </div>
-                </div>
-            </div>
-        </>
-    )
+    const toggleDrawer = (newOpen: boolean) => () => {
+        setOpen(newOpen);
+    };
+
+    const DrawerList = (
+        <Box sx={{ width: 250 }} role="presentation">
+            <List>
+                <button onClick={toggleDrawer(false)}>
+                    <IoIosClose />
+                </button>
+
+                <Divider />
+
+                <NavLink to='/hospedagem' >
+                    Hospedagem</NavLink>
+
+                <Divider />
+
+                <NavLink to='/passeios'>
+                    Passeios</NavLink>
+
+                <Divider />
+
+                <NavLink reloadDocument to='/preços' >
+                    Preços</NavLink>
+
+                <Divider />
+
+                <NavLink to='/resort' >
+                    Resort</NavLink>
+
+                <Divider />
+
+                <NavLink to='/informações'>
+                    Informações</NavLink>
+            </List>
+        </Box>
+    );
+
+    return (
+        <div>
+            <Button onClick={toggleDrawer(true)}><IoMdMenu className={s.IconCanvas} /></Button>
+            <Drawer open={open} onClose={toggleDrawer(false)}>
+                {DrawerList}
+            </Drawer>
+        </div>
+    );
 }

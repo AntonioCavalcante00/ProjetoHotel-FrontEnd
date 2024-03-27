@@ -89,7 +89,11 @@
 
     .ButtonMenu {
         display: block;
-        margin: 0 80px;
+        margin: 0 40px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-left: 90px;
     }
 
     .Logo {
