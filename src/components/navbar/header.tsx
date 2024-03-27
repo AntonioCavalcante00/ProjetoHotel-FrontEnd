@@ -2,7 +2,8 @@ import { NavLink } from 'react-router-dom'
 
 import s from './header.module.css'
 import logo from '../../public/logo.png'
-import { IoMdMenu } from "react-icons/io";
+
+import Offcanvas from '../layout/offcanvas'
 
 
 export default function Header() {
@@ -14,7 +15,7 @@ export default function Header() {
                     <div className={s.Container}>
                         <div className={s.ToggleMenu}>
                             <button className={s.ButtonMenu}>
-                                <IoMdMenu className={s.IconMenu} />
+                                <Offcanvas className={s.IconMenu} />
                             </button>
                         </div>
                         <div className={s.Logo}>
