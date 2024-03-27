@@ -1,0 +1,16 @@
+.ButtonCanvas {
+    border: 0;
+    background: none;
+}
+
+.IconCanvas {
+    width: 30px;
+    height: 30px;
+    color: #673024;
+
+}
+
+.IconCanvas:hover {
+    transform: scale(1.1);
+    transition: 0.4s linear;
+}

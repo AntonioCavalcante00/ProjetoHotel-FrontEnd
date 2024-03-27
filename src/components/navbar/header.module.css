@@ -12,13 +12,18 @@
     background-color: #ffffff;
     padding: 15px;
     width: 100%;
-    z-index: 1;
+    z-index: 3;
     position: fixed;
 }
 
 .Logo {
     display: flex;
     margin: 5px 0;
+}
+
+.Logo img:hover {
+    transform: scale(1.1);
+    transition: ease-in 0.3s;
 }
 
 .Logo img {
@@ -39,10 +44,6 @@
     display: none;
 }
 
-.IconMenu {
-    width: 30px;
-    height: 30px;
-}
 
 .Nav {
     text-decoration: none;
@@ -56,7 +57,7 @@
     text-decoration-color: #b3513bd0;
     color: #b3513bd0;
     transition: ease-in 0.3s;
-
+    transform: scale(1.1);
 }
 
 @media (max-width: 992px) {
@@ -88,13 +89,7 @@
 
     .ButtonMenu {
         display: block;
-        color: #673024;
-        margin: 0 90px;
-    }
-
-    .IconMenu {
-        width: 40px;
-        height: 40px;
+        margin: 0 80px;
     }
 
     .Logo {
