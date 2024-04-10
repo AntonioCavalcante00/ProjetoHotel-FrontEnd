@@ -22,17 +22,20 @@ export default function Header() {
                             <NavLink to='/'><img src={logo}></img></NavLink>
                         </div>
                         <div className={s.Buttons}>
-                            <NavLink to='/hospedagem' className={s.Nav}>
-                                Hospedagem
+                            <NavLink to='/' className={s.Nav}>
+                                Inicio
                             </NavLink>
-                            <NavLink to='/passeios' className={s.Nav}>
-                                Passeios</NavLink>
-                            <NavLink reloadDocument to='/preços' className={s.Nav}>
-                                Preços</NavLink>
-                            <NavLink to='/resort' className={s.Nav}>
-                                Resort</NavLink>
-                            <NavLink to='/informações' className={s.Nav}>
-                                Informações</NavLink>
+                            <NavLink to='/acomodacao' className={s.Nav}>
+                                Acomodações</NavLink>
+                            <NavLink reloadDocument to='/pacotes' className={s.Nav}>
+                                Pacotes</NavLink>
+                            <NavLink to='/sobre' className={s.Nav}>
+                                Sobre</NavLink>
+                            <NavLink to='/fale-conosco' className={s.Nav}>
+                                Fale Conosco</NavLink>
+                            <NavLink to='/reservar' className={s.NavButtonReserve}>
+                                Reservar
+                            </NavLink>
 
                         </div>
                     </div>

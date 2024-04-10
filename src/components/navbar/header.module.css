@@ -12,7 +12,7 @@
     background-color: #ffffff;
     padding: 15px;
     width: 100%;
-    z-index: 3;
+    z-index: 1;
     position: fixed;
 }
 
@@ -33,10 +33,11 @@
 
 .Buttons {
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 500px;
     gap: 24px;
 }
-
 
 .ButtonMenu {
     border: 0;
@@ -44,8 +45,8 @@
     display: none;
 }
 
-
 .Nav {
+    display: flex;
     text-decoration: none;
     color: #673024;
     font-size: 16px;
@@ -56,8 +57,23 @@
     text-decoration-line: underline;
     text-decoration-color: #b3513bd0;
     color: #b3513bd0;
-    transition: ease-in 0.3s;
+    transition: ease-in 0.1s;
     transform: scale(1.1);
+}
+
+.NavButtonReserve {
+    text-decoration: none;
+    background-color: #673024;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.NavButtonReserve:hover {
+    color: white;
+    background-color: #a14632;
+    transition: 0.1s linear;
 }
 
 @media (max-width: 992px) {

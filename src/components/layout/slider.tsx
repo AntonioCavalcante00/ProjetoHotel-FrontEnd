@@ -13,13 +13,22 @@ import banner3 from '../../public/banner3.png'
 
 const Slide = () => {
     const settings = {
-        dots: true,
         infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        adaptiveHeight: true,
         autoplay: true,
         speed: 2000,
-        autoplaySpeed: 3000
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    adaptiveHeight: true
+                }
+            }
+        ]
     };
 
     return (

@@ -20,33 +20,32 @@ export default function Offcanvas2() {
     const DrawerList = (
         <Box sx={{ width: 250 }} role="presentation">
             <List>
-                <button onClick={toggleDrawer(false)}>
-                    <IoIosClose />
+                <button className={s.ButtonCanvas} onClick={toggleDrawer(false)}>
+                    <IoIosClose className={s.IconCloseCanvas} />
                 </button>
 
-                <Divider />
 
-                <NavLink to='/hospedagem' >
+                <NavLink to='/hospedagem' className={s.NavCanvas}>
                     Hospedagem</NavLink>
 
                 <Divider />
 
-                <NavLink to='/passeios'>
+                <NavLink to='/passeios' className={s.NavCanvas}>
                     Passeios</NavLink>
 
                 <Divider />
 
-                <NavLink reloadDocument to='/preços' >
+                <NavLink reloadDocument to='/preços' className={s.NavCanvas}>
                     Preços</NavLink>
 
                 <Divider />
 
-                <NavLink to='/resort' >
+                <NavLink to='/resort' className={s.NavCanvas}>
                     Resort</NavLink>
 
                 <Divider />
 
-                <NavLink to='/informações'>
+                <NavLink to='/informações' className={s.NavCanvas}>
                     Informações</NavLink>
             </List>
         </Box>
@@ -54,7 +53,7 @@ export default function Offcanvas2() {
 
     return (
         <div>
-            <Button onClick={toggleDrawer(true)}><IoMdMenu className={s.IconCanvas} /></Button>
+            <Button onClick={toggleDrawer(true)}><IoMdMenu className={s.IconOpenCanvas} /></Button>
             <Drawer open={open} onClose={toggleDrawer(false)}>
                 {DrawerList}
             </Drawer>

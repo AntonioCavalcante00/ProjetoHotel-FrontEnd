@@ -1,6 +1,6 @@
 import Slide from '../components/layout/slider'
 
-import s from './home.module.css'
+import s from ''
 
 export default function Home() {
     return (
