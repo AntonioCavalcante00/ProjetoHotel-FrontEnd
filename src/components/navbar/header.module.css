@@ -90,7 +90,7 @@
         align-items: center;
         justify-content: center;
         padding: 0;
-        width: 22vh;
+        width: 40vh;
     }
 
     .Buttons .Nav {
@@ -100,20 +100,27 @@
 
     .ToggleMenu {
         display: block;
-
     }
 
     .ButtonMenu {
         display: block;
-        margin: 0 60px;
+        margin-left: 1px;
         align-items: center;
         justify-content: center;
         flex-direction: row;
         margin-left: 120px;
     }
 
+    .NavButtonReserve {
+        display: flex;
+        padding: 15px 15px;
+        margin: 0 10px;
+    }
+
     .Logo {
         display: block;
+        margin-left: 50px;
+        margin-right: 20px;
     }
 
     .Buttons {

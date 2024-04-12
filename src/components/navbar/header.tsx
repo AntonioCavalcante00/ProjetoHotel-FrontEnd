@@ -33,6 +33,8 @@ export default function Header() {
                                 Sobre</NavLink>
                             <NavLink to='/fale-conosco' className={s.Nav}>
                                 Fale Conosco</NavLink>
+                            <NavLink to='/fale-conosco' className={s.Nav}>
+                                Minha Conta</NavLink>
                             <NavLink to='/reservar' className={s.NavButtonReserve}>
                                 Reservar
                             </NavLink>
