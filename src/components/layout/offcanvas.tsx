@@ -25,28 +25,33 @@ export default function Offcanvas2() {
                 </button>
 
 
-                <NavLink to='/hospedagem' className={s.NavCanvas}>
-                    Hospedagem</NavLink>
+                <NavLink to='/' className={s.NavCanvas}>
+                    Inicio</NavLink>
 
                 <Divider />
 
-                <NavLink to='/passeios' className={s.NavCanvas}>
-                    Passeios</NavLink>
+                <NavLink to='/acomodacao' className={s.NavCanvas}>
+                    Acomodação</NavLink>
 
                 <Divider />
 
-                <NavLink reloadDocument to='/preços' className={s.NavCanvas}>
-                    Preços</NavLink>
+                <NavLink reloadDocument to='/pacotes' className={s.NavCanvas}>
+                    Pacotes</NavLink>
 
                 <Divider />
 
-                <NavLink to='/resort' className={s.NavCanvas}>
-                    Resort</NavLink>
+                <NavLink to='/sobre' className={s.NavCanvas}>
+                    Sobre</NavLink>
 
                 <Divider />
 
-                <NavLink to='/informações' className={s.NavCanvas}>
-                    Informações</NavLink>
+                <NavLink to='/fale-conosco' className={s.NavCanvas}>
+                    Fale Conosco</NavLink>
+
+                <Divider />
+
+                <NavLink to='/minha-conta' className={s.NavCanvas}>
+                    Minha Conta</NavLink>
             </List>
         </Box>
     );
