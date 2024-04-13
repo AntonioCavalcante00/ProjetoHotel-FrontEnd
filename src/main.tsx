@@ -8,6 +8,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Acomodação from './pages/acomodação';
 
 
 const router = createBrowserRouter([
@@ -20,8 +21,8 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/preços",
-        element: <h1>preços</h1>
+        path: "/acomodacao",
+        element: <Acomodação />
       }
     ]
   },

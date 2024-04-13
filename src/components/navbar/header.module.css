@@ -27,8 +27,8 @@
 }
 
 .Logo img {
-    width: 110px;
-    height: 110px;
+    width: 200px;
+    height: 120px;
 }
 
 .Buttons {
@@ -121,6 +121,11 @@
         display: block;
         margin-left: 50px;
         margin-right: 20px;
+    }
+
+    .Logo img {
+        width: 150px;
+        height: 120px;
     }
 
     .Buttons {
