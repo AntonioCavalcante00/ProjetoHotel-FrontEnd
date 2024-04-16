@@ -12,7 +12,7 @@
     background-color: #ffffff;
     padding: 15px;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     position: fixed;
 }
 
@@ -54,8 +54,6 @@
 }
 
 .Nav:hover {
-    text-decoration-line: underline;
-    text-decoration-color: #b3513bd0;
     color: #b3513bd0;
     transition: ease-in 0.1s;
     transform: scale(1.1);
@@ -63,8 +61,8 @@
 
 .NavButtonReserve {
     text-decoration: none;
-    background-color: #673024;
-    color: white;
+    background-color: #A2D2FA;
+    color: #673024;
     padding: 16px 24px;
     border-radius: 12px;
     font-weight: 500;
