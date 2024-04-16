@@ -1,9 +1,11 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 
-import s from './header.module.css'
-import logo from '../../public/logo4.png'
+import s from './header.module.css';
+import logo from '../../assets/public/logo4.png';
 
-import Offcanvas from '../layout/offcanvas'
+import Offcanvas from '../layout/offcanvas';
+
+import Account from '../layout/account'
 
 
 export default function Header() {
@@ -26,19 +28,23 @@ export default function Header() {
                                 Inicio
                             </NavLink>
                             <NavLink to='/acomodacao' className={s.Nav}>
-                                Acomodações</NavLink>
+                                Acomodações
+                            </NavLink>
                             <NavLink reloadDocument to='/pacotes' className={s.Nav}>
-                                Pacotes</NavLink>
+                                Pacotes
+                            </NavLink>
                             <NavLink to='/sobre' className={s.Nav}>
-                                Sobre</NavLink>
+                                Sobre
+                            </NavLink>
                             <NavLink to='/fale-conosco' className={s.Nav}>
-                                Fale Conosco</NavLink>
-                            <NavLink to='/minha-conta' className={s.Nav}>
-                                Minha Conta</NavLink>
+                                Fale Conosco
+                            </NavLink>
+                            <NavLink to='' className={s.Nav}>
+                                <Account AccountSignIn='Iniciar Sessão' AccontSignUp='Criar Uma Conta' />
+                            </NavLink>
                             <NavLink to='/reservar' className={s.NavButtonReserve}>
                                 Reservar
                             </NavLink>
-
                         </div>
                     </div>
                 </div >

@@ -1,0 +1,25 @@
+.MainContainer {
+    display: flex;
+    justify-content: center;
+    background-image: url(../../assets/public/bannerformulary.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.ContainerLogo {
+    display: flex;
+    flex-wrap: initial;
+}
+
+.Logo {
+    height: 50px;
+    width: 140px;
+}

@@ -1,0 +1,56 @@
+.MenuAccount {
+    display: flex;
+    border: 0;
+    background: 0;
+    position: none;
+}
+
+.ButtonAccount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 23px;
+    color: #673024;
+    font-weight: 500;
+}
+
+
+.IconAccount {
+    height: 30px;
+    width: 30px;
+}
+
+/* OLHAR APARTIR DAQUI  - BOTÃO MINHA CONTA */
+
+.DropDown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TableDropDown {}
+
+
+.NavDropDown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.NavDropDown:hover {
+    background-color: #b3513bd0;
+    transition: ease-in 0.1s;
+}
+
+.ButtonDropDown {
+    border: 0;
+    background: none;
+    text-decoration: none;
+    color: #673024;
+}
+
+.ButtonDropDown:hover {
+    color: #ffffff;
+    transition: ease-in 0.1s;
+}

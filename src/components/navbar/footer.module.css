@@ -1,0 +1,42 @@
+.MainContainer {
+    background-color: #673024;
+    height: 100%;
+    color: #808080;
+}
+
+.ContainerLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100%;
+
+}
+
+.ContainerRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.Link {
+    display: flex;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.Icon {
+    display: flex;
+    margin: 0 20px;
+    height: 22px;
+    width: 22px;
+}
+
+.Conect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
