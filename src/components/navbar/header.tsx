@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom';
 
 import s from './header.module.css';
-import logo from '../../assets/public/logo4.png';
+import logo from '../../assets/public/logos/logo4.png'
 
-import Offcanvas from '../layout/offcanvas';
+
 
 import Account from '../layout/account'
 
@@ -16,9 +16,6 @@ export default function Header() {
                 <div className={s.MainContainer}>
                     <div className={s.Container}>
                         <div className={s.ToggleMenu}>
-                            <button className={s.ButtonMenu}>
-                                <Offcanvas />
-                            </button>
                         </div>
                         <div className={s.Logo}>
                             <NavLink to='/'><img src={logo}></img></NavLink>

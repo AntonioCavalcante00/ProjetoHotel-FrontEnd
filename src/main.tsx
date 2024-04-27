@@ -13,9 +13,6 @@ import {
 
 import Home from './pages/home';
 import Acomodação from './pages/acomodação';
-import Login from './pages/user/login';
-import Register from './pages/user/register';
-
 
 const router = createBrowserRouter([
   {
@@ -31,15 +28,6 @@ const router = createBrowserRouter([
         element: <Acomodação />
       },
 
-      {
-        path: "conta/iniciar-sessao",
-        element: <Login />
-      },
-
-      {
-        path: "conta/cadastra-se",
-        element: <Register />
-      }
     ]
   },
 ]);

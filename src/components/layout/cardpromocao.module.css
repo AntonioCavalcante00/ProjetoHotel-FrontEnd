@@ -1,0 +1,114 @@
+.CardBuy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Title {
+    font-size: 19px;
+    margin: 20px 0;
+}
+
+.Description {
+    font-size: 16px;
+}
+
+.Price {
+    font-size: 20px;
+}
+
+.MainCards:hover {
+    transform: scale(1.05);
+    transition: ease-in 0.2s;
+}
+
+.Cards {
+    height: 300px;
+    width: 400px;
+}
+
+.Container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 1px;
+    width: 360px;
+}
+
+
+
+.Button {
+    margin-right: 20px;
+    background-color: #800000;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 19px 50px;
+    cursor: pointer;
+}
+
+.Button:hover {
+    transition: 0.8s ease;
+    background-color: #d14545;
+    cursor: pointer;
+}
+
+.NameButton {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+
+.Favorite {
+    cursor: pointer;
+    width: 20px;
+    border: none;
+    padding: 10px;
+    background-color: white;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .Container {
+        width: 120px;
+        height: 600px;
+    }
+
+    .Title {
+        font-size: 15px;
+        margin: 12px 0;
+    }
+
+    .Description {
+        font-size: 13px;
+    }
+
+    .Price {
+        font-size: 20px;
+    }
+
+    .Button {
+        margin: 10px 0;
+        padding: 10px 20px;
+    }
+
+    .CardBuy {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Button {
+        border-radius: 20px;
+        padding: 10px 13px;
+        cursor: pointer;
+    }
+
+    .Favorite {
+        padding: 0;
+    }
+
+}

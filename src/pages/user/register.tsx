@@ -1,6 +1,6 @@
 import s from './register.module.css'
 
-import logo from '../../assets/public/logo4.png';
+import logo from '../../assets/public/logos/logo4.png';
 import { Formulary } from '../../components/layout/formulary';
 
 export default function Register() {

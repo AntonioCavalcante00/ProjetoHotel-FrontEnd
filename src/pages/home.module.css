@@ -7,7 +7,7 @@
 
 .ContainerTitle {
     position: absolute;
-    top: 50%;
+    top: 270px;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -16,6 +16,7 @@
     align-items: center;
     justify-content: center;
 }
+
 
 .Welcome {
     margin: 0;
@@ -34,6 +35,13 @@
     display: flex;
 }
 
+.CardPromocao {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 @media (max-width: 992px) {
 
     .Container {
@@ -44,7 +52,7 @@
     .ContainerTitle {
         display: flex;
         justify-content: center;
-        margin: 0;
+        top: 210px;
         z-index: 100;
     }
 

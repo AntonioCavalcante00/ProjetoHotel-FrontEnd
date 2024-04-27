@@ -4,14 +4,14 @@ import "slick-carousel/slick/slick-theme.css";
 
 import s from './slider.module.css'
 
-import banner1 from '../../assets/public/banner1.png'
-import banner2 from '../../assets/public/banner2.png'
-import banner3 from '../../assets/public/banner3.png'
+
+type PropsBannerSliders = {
+    Banners?: string[]
+}
 
 
 
-
-const Slide = () => {
+const Slide = (props: PropsBannerSliders) => {
     const settings = {
         infinite: true,
         adaptiveHeight: true,
@@ -33,17 +33,13 @@ const Slide = () => {
 
     return (
         <Slider className={s.Wallpapers} {...settings}>
-            <div className={s.img}>
-                <img src={banner1} />
-            </div>
-            <div className={s.img}>
-                <img src={banner2} />
-            </div >
-            <div className={s.img}>
-                <img src={banner3} />
-            </div>
+            {props.Banners?.map((banner, index) => (
+                <div className={s.img} key={index}>
+                    <img src={banner} />
+                </div>
+            ))
+            }
         </Slider>
-
     );
 };
 
