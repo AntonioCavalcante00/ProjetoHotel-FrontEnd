@@ -2,13 +2,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import CardActions from '@mui/material/CardActions';
 
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-
-
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import s from './cardpromocao.module.css'
@@ -18,18 +12,11 @@ type PropsCardPromocao = {
     Title: string,
     Description: string,
     Price: string,
-    Url: string
+    Url: string,
+    Link: string,
 }
 
 const CardPromocao = (props: PropsCardPromocao) => {
-
-    const [isFilled, setIsFilled] = useState(true);
-
-    const handleClick = () => {
-        setIsFilled(!isFilled);
-    };
-
-
     return (
         <>
             <Card className={s.Container}>
@@ -52,22 +39,13 @@ const CardPromocao = (props: PropsCardPromocao) => {
                         </div>
                     </Typography>
                     <Typography marginTop='1em'>
-                        <span>Diária a partir de</span>
+                        <span>Pacotes a partir de</span>
                         <div className={s.Price}>
                             R$ {props.Price}
                         </div>
                     </Typography>
                     <div className={s.CardBuy}>
-                        <button className={s.Button}>
-                            <Link className={s.NameButton} to='/vinhos'>Comprar</Link>
-                        </button>
-                        <CardActions onClick={handleClick}>
-                            {isFilled ? (
-                                <button className={s.Favorite}><FavoriteBorderIcon /></button>
-                            ) : (
-                                <button className={s.Favorite}><FavoriteIcon /></button>
-                            )}
-                        </CardActions>
+                        <Link className={s.NameButton} to='/pacotes'>{props.Link}</Link>
                     </div>
                 </CardContent>
             </Card>

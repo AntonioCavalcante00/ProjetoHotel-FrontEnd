@@ -13,6 +13,8 @@ import {
 
 import Home from './pages/home';
 import Acomodação from './pages/acomodação';
+import Register from './pages/user/register';
+import Login from './pages/user/login';
 
 const router = createBrowserRouter([
   {
@@ -28,8 +30,18 @@ const router = createBrowserRouter([
         element: <Acomodação />
       },
 
-    ]
+    ],
   },
+
+  {
+    path: '/conta/cadastra-se',
+    element: <Register />
+  },
+
+  {
+    path: '/conta/iniciar-sessao',
+    element: <Login />
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

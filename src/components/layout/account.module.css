@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 23px;
+    margin-bottom: 29px;
     color: #673024;
     font-weight: 500;
 }
@@ -21,7 +21,7 @@
     width: 30px;
 }
 
-/* OLHAR APARTIR DAQUI  - BOTÃO MINHA CONTA */
+
 
 .DropDown {
     display: flex;
@@ -29,7 +29,6 @@
     justify-content: center;
 }
 
-.TableDropDown {}
 
 
 .NavDropDown {

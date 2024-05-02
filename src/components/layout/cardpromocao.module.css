@@ -1,3 +1,12 @@
+.Container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 1px;
+    width: 360px;
+    border: 0.2px solid black;
+}
+
 .CardBuy {
     display: flex;
     align-items: center;
@@ -14,7 +23,9 @@
 }
 
 .Price {
-    font-size: 20px;
+    font-size: 26px;
+    color: #A2D2FA;
+    font-weight: bold;
 }
 
 .MainCards:hover {
@@ -26,16 +37,6 @@
     height: 300px;
     width: 400px;
 }
-
-.Container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 1px;
-    width: 360px;
-}
-
-
 
 .Button {
     margin-right: 20px;
@@ -54,9 +55,14 @@
 }
 
 .NameButton {
-    text-decoration: none;
-    font-size: 14px;
-    color: white;
+    font-size: 18px;
+    color: #0000FF;
+    margin-top: 20px;
+}
+
+.NameButton:hover {
+    transform: scale(1.05);
+    transition: ease-in 0.2s;
 }
 
 .Favorite {
