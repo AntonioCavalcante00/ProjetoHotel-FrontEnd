@@ -1,6 +1,5 @@
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
 import { Link } from 'react-router-dom';
@@ -21,11 +20,7 @@ const CardPromocao = (props: PropsCardPromocao) => {
         <>
             <Card className={s.Container}>
                 <Link className={s.MainCards} to={props.Url}>
-                    <CardMedia
-                        component="image"
-                        image={props.imageUrl}
-                        alt="Imagem do Card"
-                        className={s.Cards} />
+                    <img src={props.imageUrl} className={s.Cards} />
                 </Link>
                 <CardContent>
                     <Typography gutterBottom component="div">
