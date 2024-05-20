@@ -1,0 +1,43 @@
+.cardInfos {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 20px;
+    box-shadow: 25px 7px 20px 5px #D9D9D9;
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 24px;
+    width: 400px;
+    height: 120px;
+    box-sizing: border-box;
+}
+
+.Infos {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex: 1;
+}
+
+.Infos .Info1 {
+    display: flex;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.Infos .Info2 {
+    font-weight: 400;
+    color: #D9D9D9;
+}
+
+.cardIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    height: 90px;
+    font-size: 50px;
+    color: #D9D9D9;
+}

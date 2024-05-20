@@ -1,0 +1,45 @@
+.cardContainerMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-left: 300px;
+}
+
+.cardContainer {
+    position: relative;
+    display: grid;
+    background: var(--white);
+    padding: 120px 220px;
+    box-shadow: 0 7px 40px 5px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.GroupInfo {
+    display: flex;
+    gap: 8px;
+    height: 100px;
+    color: #623E2A;
+}
+
+.GroupInfo h2 {
+    font-weight: 200;
+    font-size: 32px;
+}
+
+.GroupInfo .icon {
+    height: 34px;
+    width: 34px;
+}
+
+.Cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 34px;
+}

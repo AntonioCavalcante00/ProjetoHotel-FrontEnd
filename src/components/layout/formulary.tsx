@@ -7,8 +7,6 @@ import { useState } from "react";
 
 
 
-
-
 const singinUserFormSchema = z.object({
     email: z.string()
         .nonempty('O E-mail é obrigátorio')
@@ -79,7 +77,7 @@ export function Formulary() {
                             <input className={s.Input} type='password'  {...register('senha')} />
                             {errors.senha && <span className={s.Erro}>*{errors.senha.message}</span>}
                         </div>
-                        <input className={s.Button} type="submit" />
+                        <input className={s.Button} value='Entrar' type="submit" />
                     </div>
                 )}
                 <span>{output}</span>
